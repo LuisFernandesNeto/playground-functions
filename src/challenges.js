@@ -73,6 +73,8 @@ function catAndMouse(mouse, cat1, cat2) {
   }
 }
 
+// Usei Math.abs() para resolver essa questão.. encontrei essa solução neste link: https://www.w3schools.com/jsref/jsref_abs.asp
+
 console.log(catAndMouse(12,6,5));
 
 // Desafio 8
