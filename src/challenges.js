@@ -22,14 +22,23 @@ function splitSentence(string) {
 console.log(splitSentence('Foguete'));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+
+function concatName(string) {
+  let array = [string[string.length-1], string[0]];
+  return array;
 }
 
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  const win = 3 * wins;
+  const tie = 1 * ties;
+  let sum = win + tie;
+  return sum;
 }
+
+console.log(footballPoints(0,0));
 
 // Desafio 6
 function highestCount() {
