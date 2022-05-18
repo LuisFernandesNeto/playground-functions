@@ -1,11 +1,15 @@
 // Desafio 1
-function compareTrue(a,b) {
-  // seu código aquia
+function compareTrue(a, b) {
+  if (a === true && b === true) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // Desafio 2
 function calcArea() {
-  // seu código aqui
+  // seu código aquic
 }
 
 // Desafio 3
