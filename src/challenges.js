@@ -24,7 +24,7 @@ console.log(splitSentence('Foguete'));
 // Desafio 4
 
 function concatName(string) {
-  let array = [string[string.length-1], string[0]];
+  let array = string[string.length-1] + ", " + string[0];
   return array;
 }
 
@@ -42,7 +42,12 @@ console.log(footballPoints(0,0));
 
 // Desafio 6
 function highestCount() {
-  // seu código aqui
+ /*let array = [];
+  let sum = 0;
+  for (let index = 0; index < array.length; index += 1) 
+    if (array)
+  }*/
+  
 }
 
 // Desafio 7
