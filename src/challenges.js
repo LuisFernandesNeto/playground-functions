@@ -101,11 +101,30 @@ for (index = 0; index < array.length; index += 1) {
 console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+
+function encode(string) {
+  let splitString = string.split('');
+  for (index = 0; index < splitString.length; index += 1) {
+    if (splitString[index] == 'a') { 
+      splitString[index] = 1;
+  } else if (splitString[index] == 'e') {
+    splitString[index] = 2;
+  } else if (splitString[index] == 'i') {
+    splitString[index] = 3;
+  } else if (splitString[index] == 'o') {
+    splitString[index] = 4;
+  } else if (splitString[index] == 'u') {
+    splitString[index] = 5;
+  }
+  }
+  let joinString = splitString.join('');
+  return joinString;
 }
-function decode() {
-  // seu código aqui
+  
+  console.log(encode('go Trybe!'));
+
+function decode(string) {
+  
 }
 
 // Desafio 10
