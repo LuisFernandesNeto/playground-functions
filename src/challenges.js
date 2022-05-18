@@ -124,8 +124,25 @@ function encode(string) {
   console.log(encode('go Trybe!'));
 
 function decode(string) {
-  
+  let splitString = string.split('');
+  for (index = 0; index < splitString.length; index += 1) {
+    if (splitString[index] == 1) { 
+      splitString[index] = 'a';
+  } else if (splitString[index] == 2) {
+    splitString[index] = 'e';
+  } else if (splitString[index] == 3) {
+    splitString[index] = 'i';
+  } else if (splitString[index] == 4) {
+    splitString[index] = 'o';
+  } else if (splitString[index] == 5) {
+    splitString[index] = 'u';
+  }
+  }
+  let joinString = splitString.join('');
+  return joinString;  
 }
+
+  console.log(decode('h3 th2r2!'));
 
 // Desafio 10
 function techList() {
