@@ -145,9 +145,21 @@ function decode(string) {
   console.log(decode('h3 th2r2!'));
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(array, string) {
+  array.sort();
+  let array2 = [];
+  if (!array.length) {
+    return "Vazio!";
+  }
+  for (index = 0; index < array.length; index += 1) {
+    array2.push({
+      tech: array[index],
+      name: string,
+    });
+  }
+  return array2;
 }
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
 module.exports = {
   calcArea,
