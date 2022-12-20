@@ -2,9 +2,8 @@
 function compareTrue(a, b) {
   if (a === true && b === true) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 // Desafio 2
@@ -24,7 +23,7 @@ console.log(splitSentence('foguete'));
 // Desafio 4
 
 function concatName(string) {
-  let array = string[string.length - 1] + ", " + string[0];
+  let array = `${string[string.length - 1]}, ${string[0]}`;
   return array;
 }
 
@@ -46,7 +45,6 @@ function highestCount(array) {
   for (let index = 0; index < array.length; index += 1) {
     if (array[index] > maxValue) {
       maxValue = array[index];
-      return maxValue;
     }
   }
   let sum = 0;
@@ -58,7 +56,7 @@ function highestCount(array) {
   return sum;
 }
 
-console.log(highestCount([3, 4, 3, 5, 7, 3, 8, 3]));
+console.log(highestCount([2, 4, 3, 5, 7, 3, 7, 3]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -67,9 +65,9 @@ function catAndMouse(mouse, cat1, cat2) {
 
   if (catMouse1 < catMouse2) {
     return 'cat1';
-  } else if (catMouse2 < catMouse1) {
+  } if (catMouse2 < catMouse1) {
     return 'cat2';
-  } else if (catMouse1 === catMouse2) {
+  } if (catMouse1 === catMouse2) {
     return 'os gatos trombam e o rato foge';
   }
 }
@@ -82,15 +80,14 @@ console.log(catAndMouse(12, 6, 6));
 function fizzBuzz2(array) {
   if (array[index] % 3 === 0 && array[index] % 5 === 0) {
     return 'fizzBuzz';
-  } else if (array[index] % 5 === 0) {
+  } if (array[index] % 5 === 0) {
     return 'buzz';
-  } else if (array[index] % 3 === 0) {
+  } if (array[index] % 3 === 0) {
     return 'fizz';
-  } else if (array[index] % 3 !== 0 && array[index] % 5 !== 0) {
+  } if (array[index] % 3 !== 0 && array[index] % 5 !== 0) {
     return 'bug!';
   }
-
-};
+}
 
 function fizzBuzz(array) {
   let array2 = [];
@@ -98,7 +95,7 @@ function fizzBuzz(array) {
     array2.push(fizzBuzz2(array));
   }
   return array2;
-};
+}
 
 console.log(fizzBuzz([9, 25, 15, 7]));
 
@@ -151,7 +148,7 @@ function techList(array, string) {
   array.sort();
   let array2 = [];
   if (!array.length) {
-    return "Vazio!";
+    return 'Vazio!';
   }
   for (index = 0; index < array.length; index += 1) {
     array2.push({

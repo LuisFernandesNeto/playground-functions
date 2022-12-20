@@ -2,21 +2,21 @@
 function generatePhoneNumber(array) {
   let sum = 0;
 
-  for (index = 0; index < array.length; index += 1) {
+  for (let index = 0; index < array.length; index += 1) {
     for (let secondIndex = 0; secondIndex < array.length; secondIndex += 1) {
       if (array[index] === array[secondIndex]) {
         sum += 1;
       }
 
       if (array.length !== 11) {
-        return "Array com tamanho incorreto.";
-      } else if (array[index] < 0 || array[index] > 9 || sum >= 3) {
-        return "não é possível gerar um número de telefone com esses valores";
+        return 'Array com tamanho incorreto.';
+      } if (array[index] < 0 || array[index] > 9 || sum >= 3) {
+        return 'não é possível gerar um número de telefone com esses valores';
       }
     }
-    array.splice(0, 0, '(',);
-    array.splice(3, 0, ')',);
-    array.splice(9, 0, '-',);
+    array.splice(0, 0, '(');
+    array.splice(3, 0, ')');
+    array.splice(9, 0, '-');
 
     return array.join('');
   }
@@ -30,7 +30,7 @@ function triangleCheck(lineA, lineB, lineC) {
   if (lineC > lineB + lineC || lineC < Math.abs(lineB - lineA)) return false;
 
   return true;
-};
+}
 
 console.log(triangleCheck(10, 14, 8));
 
@@ -38,9 +38,9 @@ console.log(triangleCheck(10, 14, 8));
 function hydrate(string) {
   let number = string.match(/\d+/g);
   let sum = 0;
-  for (index = 0; index < number.length; index += 1) {
+  for (let index = 0; index < number.length; index += 1) {
     sum += parseInt(number[index]);
-  };
+  }
 
   if (number == '1') {
     return `${number} copo de água`;
