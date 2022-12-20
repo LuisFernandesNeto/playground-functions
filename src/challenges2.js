@@ -35,9 +35,20 @@ function triangleCheck(lineA, lineB, lineC) {
 console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+  let number = string.match(/\d+/g);
+  let sum = 0;
+  for (index = 0; index < number.length; index += 1) {
+    sum += parseInt(number[index]);
+  };
+
+  if (number == '1') {
+    return `${number} copo de água`;
+  }
+  return `${sum} copos de água`;
 }
+
+console.log(hydrate('2 cachaça, 8 cervejas e 3 copo de vinho'));
 
 module.exports = {
   generatePhoneNumber,
