@@ -24,9 +24,15 @@ function generatePhoneNumber(array) {
 console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
-}
+function triangleCheck(lineA, lineB, lineC) {
+  if (lineA > lineB + lineC || lineA < Math.abs(lineB - lineC)) return false;
+  if (lineB > lineA + lineC || lineB < Math.abs(lineA - lineC)) return false;
+  if (lineC > lineB + lineC || lineC < Math.abs(lineB - lineA)) return false;
+
+  return true;
+};
+
+console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
 function hydrate() {
