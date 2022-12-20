@@ -104,15 +104,15 @@ console.log(fizzBuzz([9, 25, 15, 7]));
 function encode(string) {
   let splitString = string.split('');
   for (index = 0; index < splitString.length; index += 1) {
-    if (splitString[index] === 'a') {
+    if (splitString[index] == 'a') {
       splitString[index] = 1;
-    } else if (splitString[index] === 'e') {
+    } else if (splitString[index] == 'e') {
       splitString[index] = 2;
-    } else if (splitString[index] === 'i') {
+    } else if (splitString[index] == 'i') {
       splitString[index] = 3;
-    } else if (splitString[index] === 'o') {
+    } else if (splitString[index] == 'o') {
       splitString[index] = 4;
-    } else if (splitString[index] === 'u') {
+    } else if (splitString[index] == 'u') {
       splitString[index] = 5;
     }
   }
@@ -125,15 +125,15 @@ console.log(encode('go Trybe!'));
 function decode(string) {
   let splitString = string.split('');
   for (index = 0; index < splitString.length; index += 1) {
-    if (splitString[index] === 1) {
+    if (splitString[index] == 1) {
       splitString[index] = 'a';
-    } else if (splitString[index] === 2) {
+    } else if (splitString[index] == 2) {
       splitString[index] = 'e';
-    } else if (splitString[index] === 3) {
+    } else if (splitString[index] == 3) {
       splitString[index] = 'i';
-    } else if (splitString[index] === 4) {
+    } else if (splitString[index] == 4) {
       splitString[index] = 'o';
-    } else if (splitString[index] === 5) {
+    } else if (splitString[index] == 5) {
       splitString[index] = 'u';
     }
   }
