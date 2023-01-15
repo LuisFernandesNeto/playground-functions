@@ -42,7 +42,7 @@ function hydrate(string) {
     sum += parseInt(number[index]);
   }
 
-  if (number == '1') {
+  if (number == 1) {
     return `${number} copo de água`;
   }
   return `${sum} copos de água`;
